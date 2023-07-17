@@ -1,5 +1,5 @@
 
-FROM maven:3.8.7-sapmachine-17 as build
+FROM maven:3.8.7-openjdk-18-slim as build
 WORKDIR /app
 COPY  . .
 RUN mvn clean install -Dmaven.test.skip=true
