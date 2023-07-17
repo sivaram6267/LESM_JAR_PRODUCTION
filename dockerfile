@@ -1,4 +1,4 @@
-FROM maven as build
+FROM maven:3.8.7-openjdk-18-slim as build
 WORKDIR /app
 COPY . .
 RUN mvn install -Dmaven.test.skip=true
