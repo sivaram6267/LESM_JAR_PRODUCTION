@@ -198,9 +198,7 @@
 
 
 	</dependencies>
-</plugin>
 	
-
 	<build>
 		<plugins>
 			<plugin>
