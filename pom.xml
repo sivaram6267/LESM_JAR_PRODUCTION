@@ -19,6 +19,7 @@
 		<java.version>11</java.version>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
+		<rtMaven.deployer.deployArtifact>true</rtMaven.deployer.deployArtifact>
 	</properties>
 <repositories>
     <repository>
@@ -205,6 +206,12 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			<plugin>
+        <artifactId>maven-deploy-plugin</artifactId>
+        <configuration>
+          <skip>true</skip>
+        </configuration>
+      </plugin>
 		</plugins>
 	</build>
 
